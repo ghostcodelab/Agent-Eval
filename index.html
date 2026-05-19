@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>AGENTIC EVAL</title>
+<title>AGENT EVAL</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Space+Grotesk:wght@500;700&display=swap">
@@ -1663,7 +1663,7 @@
 
 <!-- STYLE SWITCHER — preview different design directions -->
 <header>
-  <div class="brand"><span class="dot"></span>AGENTIC EVAL</div>
+  <div class="brand"><span class="dot"></span>AGENT EVAL</div>
   <nav>
     <span class="pill">v0.1.0-rc</span>
     <span>RESEARCH PREVIEW</span>
@@ -1699,7 +1699,7 @@
   </section>
 
   <section>
-    <div class="kicker">// AGENTIC EVAL SIGINT HACKBOX</div>
+    <div class="kicker">// AGENT EVAL SIGINT HACKBOX</div>
 
     <!-- TOOLKIT PAGES — 8 selectable filter tabs + ALL -->
     <nav class="toolkit-nav" data-active="all">
@@ -3765,7 +3765,7 @@ UUID: 9c8a31e0-4f3b-4b9d-9e88-5b7c5a1f0c20</textarea>
 </div>
 
 <footer>
-  <div>&copy; AGENTIC EVAL  //  RESEARCH PREVIEW</div>
+  <div>&copy; AGENT EVAL  //  RESEARCH PREVIEW</div>
   <div>BUILD 0x017F</div>
 </footer>
 
@@ -6115,9 +6115,9 @@ window.addEventListener('error', (ev) => {
       {t:'',  v:`Starting Nmap ${nmapVer} ( https://nmap.org ) at ${new Date().toUTCString().slice(17,25)} UTC\n`},
       {t:'',  v:'PORT      STATE SERVICE       VERSION\n'},
       ...profile.ports(),
-      {t:'c', v:'# clone target, run agentic-eval audit\n'},
+      {t:'c', v:'# clone target, run agent-eval audit\n'},
       {t:'p', v:'$ '}, {t:'',  v:`${isBeta?'gitlawb':'git'} clone --depth 1 ${isBeta?'gitlawb':'git'}://internal/`}, {t:'k', v:repo}, {t:'', v:`.${isBeta?'gitlawb':'git'} && cd `}, {t:'k', v:repo}, {t:'', v:'\n'},
-      {t:'p', v:'$ '}, {t:'',  v:`agentic-eval audit --agent `}, {t:'k', v:`agent-${['alpha','beta','gamma'][irand(0,2)]}`}, {t:'', v:` --depth 7 .\n`},
+      {t:'p', v:'$ '}, {t:'',  v:`agent-eval audit --agent `}, {t:'k', v:`agent-${['alpha','beta','gamma'][irand(0,2)]}`}, {t:'', v:` --depth 7 .\n`},
       {t:'',  v:'[*] loading 98-CWE catalog…  '}, {t:'ok', v:'ok\n'},
       {t:'',  v:'[*] graph build (1,247 nodes, 4,612 edges)…  '}, {t:'ok', v:'ok\n'},
       {t:'',  v:'[*] dispatch '}, {t:'k', v:'sandboxed read-only worker'}, {t:'', v:'  …  '}, {t:'ok', v:'ok\n'},
@@ -8130,7 +8130,7 @@ caches.keys().then(ks => ks.forEach(k => caches.delete(k)));`;
           if (!('Notification' in window)) throw new Error('Notification API not available');
           const result = await Notification.requestPermission();
           if (result === 'granted'){
-            new Notification('// AGENTIC EVAL', { body: 'permissions test — this is the actual notification', tag: 'cybertool-test' });
+            new Notification('// AGENT EVAL', { body: 'permissions test — this is the actual notification', tag: 'cybertool-test' });
             return 'granted · test notification posted';
           }
           return result;
@@ -8182,7 +8182,7 @@ caches.keys().then(ks => ks.forEach(k => caches.delete(k)));`;
         impactReason: 'silent overwrite — "pastejacking" replaces clipboard with attacker text',
         trigger: async () => {
           if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('clipboard.writeText not available');
-          await navigator.clipboard.writeText('// AGENTIC EVAL — permission test ' + ts());
+          await navigator.clipboard.writeText('// AGENT EVAL — permission test ' + ts());
           return 'granted · wrote a marker to your clipboard';
         }
       },
